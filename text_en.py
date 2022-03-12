@@ -78,15 +78,12 @@ def open1():
     filename = fd.askopenfilename(title="open file", initialdir="/",
                                   filetypes=filetypes)
     
-    #choose_file()
-    #web.register('Chrome', None, web.BackgroundBrowser('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'))
-    web.open_new_tab('file:///'+filename)#webbrowser.open_new_tab('file://%s' % filename)
-    
+    web.open_new_tab('file:///'+filename)
 
     
 def zapusk_html():
     
-    #roooot=Tk()
+   
     open1()
     
 while True:
@@ -99,17 +96,8 @@ while True:
         print(text.get(s, END))
         import js2py
         f = js2py.eval_js( text.get(s, END) )
-        #try:
-        f
-            #i=True
         
-            #print("error")
-        print(">>>")
-            #i=False
-        #if i==False:
-        #   f
-        
-    print('>>>',end='')
+        print('>>>')
     def python():
         #if not p:
         #print(text.get(s, END))
@@ -146,6 +134,7 @@ while True:
     rn_menu.add_command(label="exit",command=sys.exit)
     help_menu.add_command(label="version of the note",command=help_my)
     root.config(menu=menu_bar)
-    #file_menu.add_separator()
+    
     root.mainloop()
     #python-3.x
+# STEP project
