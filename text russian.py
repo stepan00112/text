@@ -15,9 +15,6 @@ def zapusk_js():
         #i=True
     except:
         print("error")
-        #i=False
-    #if i==False:
-    #   f
     
 
 def python():
